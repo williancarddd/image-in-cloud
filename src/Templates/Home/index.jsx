@@ -9,8 +9,8 @@ import {
 
 import biglogo from '../../Assets/big-logo.png'
 import './style.css'
-
-import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import {  useState } from 'react'
 import { Check } from '../../Components/Check'
 import { usesaveFileFirebase } from '../../Hooks/useSaveImage'
 
@@ -35,9 +35,13 @@ export function Home() {
         setErrorType('')
       }, 5000)
     }
-    console.log(event.target.files[0])
   }
 
+  function handleGenerateLink(exibitionMode){
+    /* eslint-disable */
+    const link = exibitionMode ? `${location.href}viewimage/${idimg}` : `viewimage/${idimg}`
+    return link
+  }
 
   return (
   <div>
@@ -68,7 +72,7 @@ export function Home() {
                  (
                 <div className="sucessup">
                   {/* eslint-disable */}
-                  <p>{`${location.href}viewimage/${idimg}`}</p>
+                  <Link className='link-img' to={handleGenerateLink(false)}>{handleGenerateLink(true)}</Link>
                   <Check  isRotate={true}/>
                  </div>
                  )

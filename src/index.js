@@ -8,7 +8,7 @@ import {PageNotFound} from './Templates/PageNotFound'
 import {Menu } from './Templates/Menu'
 import './styles/global.css'
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <BrowserRouter>
     <Menu/>
       <Switch>
@@ -17,6 +17,6 @@ ReactDOM.render(
         <Route path='*' component={PageNotFound} />
       </Switch>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
