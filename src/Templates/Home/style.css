@@ -51,7 +51,7 @@
 }
 
 .progress-file{
-  width: 15rem;
+  width: 7rem;
   height: 40px;
 }
 
@@ -64,18 +64,19 @@
 
 .link-img{
   text-decoration: none;
-  font-size: 18px;
-  padding: 4px;
+  font-size: 12px;
+  padding: 2px;
 
 }
 
 @media screen and (min-width: 800px) {
   .progress-file{
-    width: 7rem;
+    width: 15rem;
+    height: 40px;
   }
   .link-img{
     text-decoration: none;
-    font-size: 12px;
-    padding: 2px;
+    font-size: 18px;
+    padding: 4px;
   }
 } 
