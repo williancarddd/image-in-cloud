@@ -5,8 +5,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
+  NavItem
 } from 'reactstrap';
 import {Link} from 'react-router-dom'
 import logo from '../../../Assets/header-logotipo.png'
