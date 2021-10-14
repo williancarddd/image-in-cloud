@@ -32,7 +32,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Example of the website in production on the heroku platform
  https://imageincloud.herokuapp.com/
 
-###`technologies`
+### `technologies`
  - ReactJs
  - Firebase
  - Nodejs
